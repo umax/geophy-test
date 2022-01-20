@@ -12,7 +12,8 @@ setuptools.setup(
     packages=['gpgh'],
     py_modules=['cli'],
     install_requires=[
-        'Click',
+        'click==8.0.3',
+        'requests==2.27.1',
     ],
     entry_points={
         'console_scripts': ['gpgh=cli:metrics'],
