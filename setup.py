@@ -13,6 +13,7 @@ setuptools.setup(
     py_modules=['cli'],
     install_requires=[
         'click==8.0.3',
+        'pygithub==1.55',
         'requests==2.27.1',
     ],
     entry_points={

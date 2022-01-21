@@ -6,20 +6,12 @@ Use as package:
 ```
 pip install gpgh
 import gpgf
-
-metrics = gpgf.get_metrics(
-    token='mytoken',
-    org='org1',
-    top_repos=5,
-    top_langs=3,
-)
-print(metrcis)
 ```
 
 as command line script:
 ```
 pip install gpgh
-gpgf --token=mytoken --org=org1 --top-repos=5 --top-langs=3
+gpgf --token=mytoken --org-id=org1 --repos-num=5 --langs-num=3
 ```
 
 
@@ -31,6 +23,11 @@ $ make build
 ## How to upload package to PyPi
 ```
 $ make upload
+```
+
+## How to install package locally
+```
+$ make install
 ```
 
 ## How to lint the code
@@ -54,7 +51,7 @@ make flake8
 
 install required Python packages:
 ```
-$ pip install pytest
+$ pip install pytest pytest-cov
 ```
 
 run tests:
