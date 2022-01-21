@@ -13,7 +13,7 @@ import gpgh
               help='Number of repositories to show')
 @click.option('--langs-num', required=True, type=int,
               help='Number of languages to show for each repo.')
-def print_metrics(token, org_id, repos_num, langs_num):
+def get_metrics(token, org_id, repos_num, langs_num):
     client = github.Github(token, per_page=100)
     org = client.get_organization(org_id)
 
@@ -47,4 +47,4 @@ def print_metrics(token, org_id, repos_num, langs_num):
 
 
 if __name__ == '__main__':
-    print_metrics()
+    get_metrics()

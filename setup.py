@@ -17,7 +17,7 @@ setuptools.setup(
         'requests==2.27.1',
     ],
     entry_points={
-        'console_scripts': ['gpgh=cli:metrics'],
+        'console_scripts': ['gpgh=cli:get_metrics'],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
