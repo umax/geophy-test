@@ -5,6 +5,7 @@ __all__ = (
     'get_repos',
     'load_pulls',
     'filter_none',
+    'get_top',
     'count_attr',
 )
 
